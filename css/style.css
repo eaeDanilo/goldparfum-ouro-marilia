@@ -201,8 +201,7 @@ body::after {
   .marca__gold, .marca__parfum { font-size: 1.05rem; }
   .marca__sub { font-size: .54rem; letter-spacing: .22em; }
   .placa { padding: 1.5rem 1.1rem; }
-  .placa__valor { font-size: clamp(2.6rem, 19vw, 4rem); }
-  .placa__moeda { font-size: 1.2rem; }
+  .placa--promessa { padding: 1.2rem 1.1rem; }
   .btn { padding: .9rem 1.5rem; font-size: .74rem; }
   .rodape__logo { width: 110px; height: 110px; }
   .wpp-flutuante { width: 52px; height: 52px; right: 1rem; bottom: 1rem; }
@@ -241,10 +240,10 @@ body::after {
   letter-spacing: .4em;
   text-transform: uppercase;
   color: var(--cinza);
-  margin-bottom: 2rem;
+  margin-bottom: clamp(1.4rem, 3vw, 2rem);
 }
 
-/* placa da cotação */
+/* placa da promessa */
 .placa {
   position: relative;
   display: inline-block;
@@ -276,54 +275,67 @@ body::after {
 .placa__canto--bl { bottom: -2px; left: -2px; border-right: 0; border-top: 0; }
 .placa__canto--br { bottom: -2px; right: -2px; border-left: 0; border-top: 0; }
 
-.placa__preco {
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  gap: .6rem;
+.placa--promessa {
+  margin-top: clamp(1.8rem, 4vw, 2.6rem);
+  padding: clamp(1.3rem, 3vw, 1.9rem) clamp(1.6rem, 5vw, 3.4rem);
 }
-.placa__moeda {
+.placa__promessa {
   font-family: var(--serif);
-  font-size: clamp(1.3rem, 3.5vw, 2rem);
-  color: var(--ouro);
+  font-size: clamp(1.05rem, 2.8vw, 1.6rem);
+  letter-spacing: .06em;
+  line-height: 1.35;
+  color: var(--marfim);
+  text-transform: uppercase;
 }
-.placa__valor {
-  font-family: var(--serif);
+.placa__promessa strong {
   font-weight: 800;
-  font-size: clamp(4rem, 13vw, 7.5rem);
-  line-height: 1;
   background: var(--grad-ouro);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  filter: drop-shadow(0 4px 18px rgba(212, 164, 55, .35));
 }
-.placa__unidade {
-  margin-top: .8rem;
-  font-size: clamp(.95rem, 2.2vw, 1.15rem);
-  letter-spacing: .08em;
-  color: var(--marfim);
-}
-.placa__unidade strong { color: var(--ouro-claro); font-weight: 500; }
-.placa__data {
-  margin-top: .5rem;
-  font-size: .72rem;
-  letter-spacing: .22em;
+.placa__nota {
+  margin-top: .6rem;
+  font-size: clamp(.68rem, 1.6vw, .76rem);
+  letter-spacing: .18em;
   text-transform: uppercase;
   color: var(--cinza);
 }
 
 .hero__titulo {
   font-family: var(--serif);
-  font-weight: 600;
-  font-size: clamp(1.5rem, 4vw, 2.5rem);
-  letter-spacing: .06em;
-  margin-top: clamp(2.5rem, 6vw, 3.8rem);
+  font-weight: 800;
   text-transform: uppercase;
+  line-height: .98;
+  letter-spacing: .04em;
+}
+.hero__titulo-l1,
+.hero__titulo-l2 { display: block; }
+.hero__titulo-l1 {
+  font-weight: 600;
+  font-size: clamp(1.4rem, 4.6vw, 2.6rem);
+  letter-spacing: .3em;
+  text-indent: .3em;
+  color: var(--marfim);
+}
+.hero__titulo-l2 {
+  margin-top: .18em;
+  font-size: clamp(2.6rem, 9vw, 5.6rem);
+  background: var(--grad-ouro);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 4px 22px rgba(212, 164, 55, .28));
+}
+.hero__titulo-l2 i {
+  font-style: normal;
+  font-size: .55em;
+  vertical-align: .12em;
+  padding: 0 .12em;
 }
 .hero__texto {
   max-width: 34rem;
-  margin: 1.2rem auto 0;
+  margin: clamp(1.6rem, 4vw, 2.2rem) auto 0;
   color: var(--cinza);
   font-size: 1.02rem;
 }

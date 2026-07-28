@@ -1,12 +1,5 @@
 /* Preenche o site com os dados de content.js — não precisa editar */
 (function () {
-  const fmt = (v) =>
-    v.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-
-  /* cotação destaque */
-  document.getElementById("preco-destaque").textContent = fmt(CONTENT.precoDestaque);
-  document.getElementById("preco-data").textContent = CONTENT.precoAtualizadoEm;
-
   /* endereço + horário */
   document.getElementById("endereco-l1").textContent = CONTENT.endereco;
   document.getElementById("endereco-l2").textContent =
