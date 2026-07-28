@@ -375,6 +375,7 @@ body::after {
   margin: 0 .8rem;
 }
 .secao__sub { color: var(--cinza); margin-bottom: 2.5rem; }
+.secao__sub i { font-style: normal; color: var(--ouro); padding: 0 .15em; }
 
 /* ---------- cartas (o que compramos) ---------- */
 
