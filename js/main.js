@@ -1,5 +1,8 @@
 /* Preenche o site com os dados de content.js — não precisa editar */
 (function () {
+  /* preço do grama */
+  document.getElementById("preco-grama").textContent = CONTENT.precoGrama;
+
   /* endereço + horário */
   document.getElementById("endereco-l1").textContent = CONTENT.endereco;
   document.getElementById("endereco-l2").textContent =
