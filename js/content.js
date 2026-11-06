@@ -7,7 +7,7 @@
 const CONTENT = {
 
   /* ---- PREÇO ---- */
-  precoGrama: "410",              // R$ por grama de ouro maciço
+  precoGrama: "412",              // R$ por grama de ouro maciço
 
   /* ---- CONTATO ---- */
   whatsapp: "5514996812797",       // só números, com 55 + DDD
